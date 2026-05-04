@@ -105,7 +105,8 @@
         // =====================================================================
         // 2. CONFIGURATION ET INITIALISATION FIREBASE
         // =====================================================================
-        /const firebaseConfig = {
+        // REMPLACEZ CE BLOC PAR VOTRE CONFIGURATION FIREBASE DONNÉE À L'ÉTAPE 1
+       const firebaseConfig = {
   apiKey: "AIzaSyC7R5SAtvyi93qA4WBlhc5kPg2_g6p5iHg",
   authDomain: "facturation-elagage-enedis.firebaseapp.com",
   databaseURL: "https://facturation-elagage-enedis-default-rtdb.europe-west1.firebasedatabase.app",
@@ -115,6 +116,11 @@
   appId: "1:907707945669:web:fd274265eb1c21c3a3d6ac",
   measurementId: "G-9JKC55MS5W"
 };
+
+        // Initialisation de l'application Firebase
+        firebase.initializeApp(firebaseConfig);
+        // Récupération du service d'authentification
+        const auth = firebase.auth();
         // =====================================================================
 
 
